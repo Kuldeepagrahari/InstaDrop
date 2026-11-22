@@ -4,7 +4,8 @@
 
 QuickDrop is a real-time sharing app built on the MERN stack. Create a room, share its code, and everyone who joins sees the same stream of messages and files instantly. Move a snippet from your laptop to your phone, or hand a file to a friend, without emailing yourself or signing into a messaging app.
 
-[Live Demo](#) | [Demo Video](#) | [Report a Bug](../../issues)
+[Live Demo](https://instadrop-sigma.vercel.app/) | [Report a Bug](../../issues)
+<img width="1901" height="851" alt="image" src="https://github.com/user-attachments/assets/edd336ce-1605-48a6-bc08-86db18e8a70f" />
 
 ---
 
