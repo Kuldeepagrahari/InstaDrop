@@ -5,7 +5,8 @@
 InstaDrop is a real-time sharing app built on the MERN stack. Create a room, share its code, and everyone who joins sees the same stream of messages and files instantly. Move a snippet from your laptop to your phone, or hand a file to a friend, without emailing yourself or signing into a messaging app.
 
 [Live Demo](https://instadrop-sigma.vercel.app/) | [Report a Bug](../../issues)
-<img width="1901" height="851" alt="image" src="https://github.com/user-attachments/assets/edd336ce-1605-48a6-bc08-86db18e8a70f" />
+<img width="1902" height="865" alt="image" src="https://github.com/user-attachments/assets/d078b2f2-c373-4c79-8a1e-c3a48e06cd82" />
+
 
 ---
 
