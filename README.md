@@ -1,8 +1,8 @@
-# QuickDrop
+# InstaDrop
 
 **Share text, code, links, files and images across any device in seconds, using a simple room code.**
 
-QuickDrop is a real-time sharing app built on the MERN stack. Create a room, share its code, and everyone who joins sees the same stream of messages and files instantly. Move a snippet from your laptop to your phone, or hand a file to a friend, without emailing yourself or signing into a messaging app.
+InstaDrop is a real-time sharing app built on the MERN stack. Create a room, share its code, and everyone who joins sees the same stream of messages and files instantly. Move a snippet from your laptop to your phone, or hand a file to a friend, without emailing yourself or signing into a messaging app.
 
 [Live Demo](https://instadrop-sigma.vercel.app/) | [Report a Bug](../../issues)
 <img width="1901" height="851" alt="image" src="https://github.com/user-attachments/assets/edd336ce-1605-48a6-bc08-86db18e8a70f" />
@@ -21,9 +21,8 @@ QuickDrop is a real-time sharing app built on the MERN stack. Create a room, sha
 8. [API Reference](#api-reference)
 9. [WebSocket Events](#websocket-events)
 10. [Design Decisions](#design-decisions)
-11. [Security](#security)
-12. [Roadmap](#roadmap)
-13. [Contributing](#contributing)
+11. [Roadmap](#roadmap)
+12. [Contributing](#contributing)
 
 
 ---
@@ -122,7 +121,7 @@ Ownership is checked on the server for every delete request. Hiding the delete b
 ## Project Structure
 
 ```
-quickdrop/
+instadrop/
 ├── client/                 # React frontend
 │   ├── src/
 │   │   ├── components/
@@ -226,16 +225,6 @@ You will need MongoDB, Redis and Kafka running locally and configured in your `.
 - **Why room codes instead of invites?** The goal is frictionless sharing across your own devices. A code works without needing the other device to be signed into the same account.
 - **Why server-side ownership checks?** Authorization must never depend on the client. Every delete verifies the requester against the room's owner.
 - **Why Docker?** A multi-service stack (API, client, MongoDB, Redis, Kafka) is painful to set up by hand. Compose makes it reproducible.
-
----
-
-## Security
-
-- Passwords are hashed before storage.
-- JWT-based authentication on all protected REST routes and WebSocket connections.
-- Server-side ownership and membership checks on every room action.
-- File uploads are restricted by size and type.
-- Rooms are accessible only by code, so use long, random codes and avoid sharing them publicly.
 
 ---
 
