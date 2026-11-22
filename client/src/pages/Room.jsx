@@ -246,7 +246,7 @@ const Room = () => {
                         onClick={() => navigate("/")}
                     >
                         <ArrowLeft size={16} />
-                        Back to QuickDrop
+                        Back to InstaDrop
                     </button>
                 </div>
             </div>

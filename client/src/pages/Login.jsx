@@ -54,7 +54,7 @@ const Login = () => {
                     <Mail size={25} />
                 </div>
 
-                <h1>Welcome to QuickDrop</h1>
+                <h1>Welcome to InstaDrop</h1>
 
                 <p>
                     Sign in to create rooms and share content

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/Navbar.jsx";
 
@@ -13,7 +13,7 @@ import { AuthProvider } from "./context/AuthContext.jsx";
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <Router>
             <AuthProvider>
                 <Navbar />
 
@@ -46,7 +46,7 @@ const App = () => {
                     </Route>
                 </Routes>
             </AuthProvider>
-        </BrowserRouter>
+        </Router>
     );
 };
 

@@ -24,7 +24,7 @@ const Navbar = () => {
                     <Zap size={18} />
                 </div>
 
-                <span>QuickDrop</span>
+                <span>InstaDrop</span>
             </Link>
 
             <div className="navbar-links">

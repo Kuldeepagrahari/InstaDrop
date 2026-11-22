@@ -59,7 +59,7 @@ const Home = () => {
                     </h1>
 
                     <p>
-                        QuickDrop lets you share text, links, code and files
+                        InstaDrop lets you share text, links, code and files
                         between devices using a simple room.
                     </p>
 

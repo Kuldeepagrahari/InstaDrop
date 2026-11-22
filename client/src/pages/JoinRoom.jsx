@@ -146,7 +146,7 @@ const JoinRoom = () => {
 
                 <div className="join-eyebrow">
                     <span />
-                    QUICKDROP ROOMS
+                    INSTADROP ROOMS
                 </div>
 
                 <h1>Join a room</h1>
