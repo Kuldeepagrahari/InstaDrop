@@ -186,32 +186,6 @@ You will need MongoDB, Redis and Kafka running locally and configured in your `.
 
 ---
 
-## Environment Variables
-
-**server/.env**
-
-```env
-PORT=5000
-MONGO_URI=mongodb://mongo:27017/quickdrop
-REDIS_URL=redis://redis:6379
-KAFKA_BROKERS=kafka:9092
-JWT_SECRET=change-me
-JWT_EXPIRES_IN=7d
-CLIENT_URL=http://localhost:3000
-MAX_FILE_SIZE_MB=10
-```
-
-**client/.env**
-
-```env
-REACT_APP_API_URL=http://localhost:5000
-REACT_APP_WS_URL=ws://localhost:5000
-```
-
-Never commit real secrets. Keep `.env` files in `.gitignore`.
-
----
-
 ## API Reference
 
 > Update paths to match your routes.
@@ -220,26 +194,16 @@ Never commit real secrets. Keep `.env` files in `.gitignore`.
 
 | Method | Endpoint | Description |
 |---|---|---|
-| POST | `/api/auth/register` | Create an account |
-| POST | `/api/auth/login` | Log in and receive a JWT |
+| POST | `/api/login` | Login/register through Google |
 
 ### Rooms
 
 | Method | Endpoint | Auth | Description |
 |---|---|---|---|
-| POST | `/api/rooms` | Yes | Create a room with a name |
-| POST | `/api/rooms/join` | Yes | Join a room using its code |
-| GET | `/api/rooms/:id` | Member | Get room details |
+| POST | `/api/create-room` | Yes | Create a room with a name |
+| POST | `/api/join-room` | Yes | Join a room using its code |
+| GET | `/api/room/:id` | Member | Get room details |
 | DELETE | `/api/rooms/:id` | Owner | Delete the room |
-
-### Messages and Files
-
-| Method | Endpoint | Auth | Description |
-|---|---|---|---|
-| GET | `/api/rooms/:id/messages` | Member | List room content |
-| POST | `/api/rooms/:id/messages` | Member | Add text, code or link |
-| POST | `/api/rooms/:id/files` | Member | Upload a file or image |
-| DELETE | `/api/rooms/:id/messages/:msgId` | Owner | Delete a message or file |
 
 ---
 
