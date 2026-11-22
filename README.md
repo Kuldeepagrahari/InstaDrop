@@ -18,14 +18,13 @@ QuickDrop is a real-time sharing app built on the MERN stack. Create a room, sha
 5. [Permission Model](#permission-model)
 6. [Project Structure](#project-structure)
 7. [Getting Started](#getting-started)
-8. [Environment Variables](#environment-variables)
-9. [API Reference](#api-reference)
-10. [WebSocket Events](#websocket-events)
-11. [Design Decisions](#design-decisions)
-12. [Security](#security)
-13. [Roadmap](#roadmap)
-14. [Contributing](#contributing)
-15. [License](#license)
+8. [API Reference](#api-reference)
+9. [WebSocket Events](#websocket-events)
+10. [Design Decisions](#design-decisions)
+11. [Security](#security)
+12. [Roadmap](#roadmap)
+13. [Contributing](#contributing)
+
 
 ---
 
